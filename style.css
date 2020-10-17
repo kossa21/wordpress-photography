@@ -1,0 +1,199 @@
+/*-----------  FONT -------------*/
+@font-face {
+    font-family: 'Sero Pro';
+    src: 'SeroPro.ttf';
+}
+
+/*----------- VARIABLES -----------*/
+
+:root {
+    --gray-text: #a8a4a4;
+}
+
+/*----------- STYLES -----------*/
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    font-family: 'Sero Pro', 'Arial';
+}
+
+.body-wrapper-home {
+    background-color: #ffeddb;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 50px);
+    padding: 50px 50px 0 50px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */
+
+header {
+    width: 300px;
+}
+
+header h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.submenu {
+    margin-left: 20px;
+    display: none;
+    transition: display 1s;
+}
+
+.submenu.show {
+    display: block;
+}
+
+li.active {
+    color: var(--gray-text);
+}
+
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.icons {
+    margin-top: 30px;
+}
+
+.icons i {
+    display: block;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Main */
+
+main {
+    width: calc(100vw - 300px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailContact{
+    color : orange;
+    text-decoration: underline;
+}
+
+main img {
+    max-width: 100%;
+}
+
+/*Contact*/
+
+article{
+    width: calc(100vw - 300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+/*About*/
+.about main {
+    align-items: flex-start;
+    margin-top: 70px;   
+}
+
+.about main p {
+    text-align: justify;
+}
+
+.aboutImg{
+    width: 50%;
+    margin-right: 20px;
+}
+
+.controller-container {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+article *{
+    margin: 5px 0 0 0;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--gray-text);
+    
+    height: 50px;
+    padding-right: 30px;
+}
+
+/*----------- MEDIA QUERIES -----------*/
+
+/* Tablet devices */
+@media screen and (max-width: 991px) {
+
+    .container {
+        padding-top: 25px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .about main {
+        margin-top: 10px;
+    }
+
+    .aboutImg {
+        width: 65%;
+        margin: 0 auto 0 auto;
+    }
+
+    li {
+        margin-top: 5px;
+    }
+
+    .margin-top-40 {
+        margin-top: 25px;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .aboutImg {
+        width: 100%;
+    }
+}
