@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordpress Project</title>
+
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c8a5c76e34.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
 </head>
 <body>
     <div class="container">
@@ -25,7 +26,7 @@
                     <ul class="menu">
                         <div class="margin-top-40">
                             <a href="home.html"><li>Home</li></a>
-                            <li onClick="toggleSubmenu()">Portfolio</li>
+                            <li class="active" onClick="toggleSubmenu()">Portfolio</li>
                             <ul class="submenu show">
                                 <a href="portfolio-interior.html"><li>Interiors</li></a>
                                 <a href="#"><li>Architecture</li></a>
@@ -38,7 +39,7 @@
                         <div class="margin-top-40">
                             <a href="#"><li>Diario</li></a>
                             <a href="about.html"><li>About</li></a>
-                            <a href="contact.html"><li class="active">Contacto</li></a>
+                            <a href="contact.html"><li>Contacto</li></a>
                         </div>
         
                         <div class="icons">
@@ -50,16 +51,18 @@
             </nav>
         </aside>
     
-        <article class="main-article">
-            <h3>Barcelona</h3>
-            <p>You can contact me at <span class="emailContact">qgabriela.v@gmail.com</span></p>
-            <p>or just simply call me +34 699 867 378</p>
-            <p>I'll be exiting to know about you</p>
-        </article>
+        <main class="main-container scrollable-portfolio">
+            <img src="images/portfolio-image.png" alt="photo">
+            <img src="images/home-image.png" alt="photo">
+            <img src="images/portfolio-image.png" alt="photo">
+            <img src="images/home-image.png" alt="photo">
+        </main>
     </div>
     
     <footer>
         <p>©    Gabriela Quinche</p>
     </footer>
+
+    <script src="functions.js"></script>
 </body>
 </html>

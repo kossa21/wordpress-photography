@@ -10,38 +10,48 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <aside class="nav-menu">
             <h1>GABRIELA QUINCHE</h1>
     
-            <nav>
-                <ul>
-                    <div class="margin-top-40">
-                        <a href="home.html"><li>Home</li></a>
-                        <li class="active" onClick="toggleSubmenu()">Portfolio</li>
-                        <ul class="submenu show">
-                            <a href="#"><li>Interiors</li></a>
-                            <a href="#"><li>Architecture</li></a>
-                            <a href="#"><li>Food</li></a>
-                            <a href="#"><li>E-commerce</li></a>
-                        </ul>
-                        <a href="#"><li>Series</li></a>
-                    </div>
+            <nav role="navigation">
+                <div class="menuToggle">
                     
-                    <div class="margin-top-40">
-                        <a href="#"><li>Diario</li></a>
-                        <a href="about.html"><li>About</li></a>
-                        <a href="contact.html"><li>Contacto</li></a>
-                    </div>
-    
-                    <div class="icons">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                    </div>
-                </ul>
+                    <input class="display-none" type="checkbox" checked>
+
+                    <!-- Menu icon -->
+                    <span class="display-none"></span>   
+                    <span class="display-none"></span>
+                    <span class="display-none"></span>
+
+                    <ul class="menu">
+                        <div class="margin-top-40">
+                            <a href="home.html"><li>Home</li></a>
+                            <li class="active" onClick="toggleSubmenu()">Portfolio</li>
+                            <ul class="submenu show">
+                                <a href="portfolio-interior.html"><li>Interiors</li></a>
+                                <a href="#"><li>Architecture</li></a>
+                                <a href="#"><li>Food</li></a>
+                                <a href="#"><li>E-commerce</li></a>
+                            </ul>
+                            <a href="#"><li>Series</li></a>
+                        </div>
+                        
+                        <div class="margin-top-40">
+                            <a href="#"><li>Diario</li></a>
+                            <a href="about.html"><li>About</li></a>
+                            <a href="contact.html"><li>Contacto</li></a>
+                        </div>
+        
+                        <div class="icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </ul>
+                </div>
             </nav>
-        </header>
+        </aside>
     
-        <main>
+        <main class="main-container">
             <img src="images/portfolio-image.png" alt="photo">
         </main>
     </div>
