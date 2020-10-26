@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Interior</title>
+    <title>Wordpress Project</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c8a5c76e34.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c8a5c76e34.js" crossorigin="anonymous"></script><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -27,7 +25,7 @@
                     <ul class="menu">
                         <div class="margin-top-40">
                             <li><a href="home.html">Home</a></li>
-                            <li class="active" onClick="toggleSubmenu()">Portfolio</li>
+                            <li onClick="toggleSubmenu()">Portfolio</li>
                             <ul class="submenu show">
                                 <li><a href="portfolio-interior.html">Interiors</a></li>
                                 <li><a href="#">Architecture</a></li>
@@ -38,7 +36,7 @@
                         </div>
                         
                         <div class="margin-top-40">
-                            <li><a href="diario.html">Diario</a></li>
+                            <li><a href="#" class="active">Diario</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contacto</a></li>
                         </div>
@@ -52,18 +50,20 @@
             </nav>
         </aside>
     
-        <main class="main-container scrollable-portfolio">
-            <img src="images/portfolio-image.png" alt="photo">
-            <img src="images/home-image.png" alt="photo">
-            <img src="images/portfolio-image.png" alt="photo">
-            <img src="images/home-image.png" alt="photo">
-        </main>
+        <article class="single">
+            <div class="snipet">
+                <h2 class="snipet-title">black lives matter, barcelona 2020</h2>
+                <p class="meta">Jun 07, 2020</p>
+                <img src="images/portfolio-image.png" alt="photo">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error ducimus perferendis ipsum vitae eius. Iusto magnam qui, modi possimus tempora molestias natus explicabo nobis, fugiat asperiores aut, blanditiis harum deleniti?&lt;</p>
+            </div>
+        </article>
     </div>
     
-    <footer>
+    <footer class="footer">
         <p>©    Gabriela Quinche</p>
     </footer>
 
     <script src="functions.js"></script>
-</body>
-</html>
+
+</body></html>
